@@ -1,0 +1,140 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    /* Um cinza claro e suave */
+    color: #333;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+    /* Melhora a renderização do texto */
+}
+
+/* --- Cabeçalho --- */
+header {
+    background-color: #4a7d4a;
+    /* Um verde floresta para um toque natural */
+    color: #ffffff;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    /* Sombra mais pronunciada */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+    /* Título maior e impactante */
+    letter-spacing: 0.05em;
+    /* Pequeno espaçamento entre letras */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    /* Sombra no texto do título */
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
+    /* Espaço entre o título e o link */
+    display: inline-block;
+    /* Para que o padding funcione corretamente */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    /* Borda sutil */
+    border-radius: 25px;
+    /* Cantos arredondados para um visual moderno */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    background-color: #6a9b6a;
+    /* Um verde mais claro ao passar o mouse */
+    transform: translateY(-2px);
+    /* Efeito de "levantar" */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Conteúdo Principal --- */
+main {
+    max-width: 800px;
+    /* Largura um pouco menor para melhor leitura */
+    margin: 2.5rem auto;
+    /* Mais espaço no topo e base */
+    padding: 0 2rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    /* Cantos mais arredondados */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    /* Sombra mais suave e distribuída */
+    padding-bottom: 2rem;
+    /* Espaço interno na parte inferior */
+}
+
+main p {
+    font-size: 1.15rem;
+    /* Texto do parágrafo um pouco maior */
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    /* Justifica o texto para um visual mais limpo */
+}
+
+main img {
+    max-width: 100%;
+    /* Garante que a imagem não transborde */
+    height: auto;
+    display: block;
+    /* Remove o espaço extra abaixo da imagem */
+    margin: 2rem auto;
+    /* Centraliza a imagem e adiciona espaço */
+    border-radius: 8px;
+    /* Cantos arredondados na imagem */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil na imagem */
+}
+
+ul {
+    list-style: disc inside;
+    /* Bolinhas dentro do item da lista */
+    padding-left: 0;
+    /* Remove padding padrão da lista */
+    margin-top: 2rem;
+}
+
+li {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    padding-left: 1rem;
+    /* Espaço para a bolinha */
+    position: relative;
+    /* Para posicionar a bolinha */
+}
+
+/* --- Responsividade --- */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    main {
+        margin: 1.5rem auto;
+        padding: 0 1.5rem;
+    }
+
+    main p {
+        font-size: 1rem;
+    }
+
+    li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav a {
+        padding: 0.6rem 1rem;
+    }
+}
